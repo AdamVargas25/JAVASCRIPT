@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASAJE TM</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./IMG/Image20230420073417.jpg" alt="" width="150" height="150">
+        <h1>SISTEMA DE TRANSPORTE MASIVO TM</h1>
+        <h2>INGRESO / SALDO TARGETA TRANSMILENIO</h2>
+        <Script>
+            //Programa que permita capturar el saldo de su tarjeta de Transmilenio para ingresar al sistema, luego validar su ingreso –recuerde que el pasaje de TM es $2.950. Enviar mensajes respectivos dependiendo de la validación de sistema
+            //VARIABLES
+            let saldo;
+            const tm=2950;
+            //entrada
+            saldo=parseInt(prompt("Ingrese saldo de su targeta TM"));
+            //proceso-salida
+            if (saldo>=tm) {
+                swal("Estimado usuario","Ingrese a trasmilenio","success");
+            }else{
+                swal("Estimado usuario","Saldo insuficiente , Recargue Targeta TM","error");
+            }
+        </Script>
+    </center>
+</body>
+</html>
